@@ -1,0 +1,88 @@
+.clients-container {
+  padding: 20px;
+}
+
+.clients-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.clients-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.clients-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.client-name {
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.client-email {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.client-email .icon {
+  margin-right: 5px;
+}
+
+.contact-info {
+  font-size: 14px;
+}
+
+.contact-phone {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 3px;
+}
+
+.contact-phone .icon {
+  margin-right: 5px;
+}
+
+.location-info {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: var(--text-muted);
+  max-width: 200px;
+}
+
+.location-info .icon {
+  margin-right: 5px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .clients-header {
+    flex-direction: column;
+  }
+
+  .clients-actions {
+    margin-top: 15px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .search-container {
+    width: 100%;
+  }
+}

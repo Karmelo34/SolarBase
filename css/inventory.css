@@ -1,0 +1,56 @@
+.inventory-container {
+  padding: 20px;
+}
+
+.inventory-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.inventory-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.inventory-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.item-name {
+  font-weight: 500;
+}
+
+.quantity-info {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-available {
+  font-weight: 500;
+}
+
+.quantity-total {
+  color: var(--text-muted);
+  margin-left: 3px;
+}
+
+@media (max-width: 768px) {
+  .inventory-header {
+    flex-direction: column;
+  }
+
+  .inventory-actions {
+    margin-top: 15px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .search-container,
+  .filter-container {
+    width: 100%;
+  }
+}
